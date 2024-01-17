@@ -25,6 +25,43 @@
       </h3>
       <br><br>
 
+      <p style="font-size: 22px; color:ghostwhite;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: rgb(255, 150, 150)">Okay!</b>
+        <br>
+        <b style="color: rgb(255, 190, 150)">Good Job!</b>
+        <br>
+        <b style="color: rgb(248, 255, 169)">No/Incorrect</b>
+        <br>
+        <b style="color: rgb(179, 255, 189)">You're a rockstar!</b>
+        <br>
+        <b style="color: rgb(171, 217, 255)">Peace out</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12" style="color:rgb(255, 168, 255);">
+	      <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12" style="color:ghostwhite">
+          <label>Prediction 1 - </label>
+          <p class="hang_gesture" id="result_hand_gesture"></p>
+          <p class="emoji" id="update_emoji"></p>
+
+          <label>Prediction 2 - </label>
+          <p class="hang_gesture" id="result_hand_gesture2"></p>
+          <p class="emoji" id="update_emoji2"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12" style="color:lightpink;">
+          <label>Snapshot - </label>
+          <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-info">Predict Gesture</button>
+      </div>
 
     <script src="main.js"></script>
 
